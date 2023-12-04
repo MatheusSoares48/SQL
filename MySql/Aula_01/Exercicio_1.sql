@@ -28,14 +28,11 @@ VALUES ("Antonio Bandeira","1985-08-10", "2020-02-21", "Designer Jr", 3000.90),
 /* Visualizar os dados*/ -- Visualiza todos os dados
 SELECT * FROM tb_colaboradores;
 
+-- Mostra os colaboradores com salario superior a 2000
 SELECT * FROM tb_colaboradores WHERE salario > 2000.00;
+-- Mostra os colaboradores com salario inferior a 2000
 SELECT * FROM tb_colaboradores WHERE salario < 2000.00;
 
+-- Atualiza o salario do Colaborador Id 4 para 3000
 UPDATE tb_colaboradores SET salario = 3000.00 WHERE id = 4;
 
-SET SQL_SAFE_UPDATES = 0;
-
-SET SQL_SAFE_UPDATES = 1;
-
--- Apaga todos os dados da tabela (Não é possível desfazer)
-DELETE FROM tb_colaboradores;
