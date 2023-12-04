@@ -35,8 +35,7 @@ SELECT * FROM tb_produtos WHERE preco > 500.00;
 SELECT * FROM tb_produtos WHERE preco < 500.00;
 
 -- Mostra em PT-BR o preço dos produtos
-SELECT nome, CONCAT ('R$ ' , FORMAT (preco, 2, 'pt_BR')) AS preço
-FROM tb_produtos;
+SELECT nome, CONCAT ('R$ ' , FORMAT (preco, 2, 'pt_BR')) AS preço FROM tb_produtos;
 
 -- Atualiza a fabricação do Produto Id 7 para 2023-12-30
 UPDATE tb_produtos SET fabricacao = "2023-12-30" WHERE id = 7;
